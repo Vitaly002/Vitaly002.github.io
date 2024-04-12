@@ -6,3 +6,23 @@ function hourlyRate(radio) {
         hourlyRate.classList.add('hidden');
     }
 }
+
+// Arrow to the top
+window.addEventListener('scroll', function() {
+    var backToTop = document.getElementById('backToTop');
+    var aboutSection = document.getElementById('about');
+
+    // Check if the scroll position is within the about section
+    if (window.scrollY >= aboutSection.offsetTop) {
+        backToTop.style.display = 'block'; // Show the arrow
+    } else {
+        backToTop.style.display = 'none'; // Hide the arrow
+    }
+});
+
+document.getElementById('backToTop').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+});

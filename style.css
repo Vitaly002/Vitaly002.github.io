@@ -176,6 +176,47 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* Education section*/
+.tab-contents#education h3 {
+    font-size: 24px;
+    color: #ff004f;
+    margin-bottom: 20px;
+}
+
+.tab-contents#education .box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+    padding: 30px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.tab-contents#education .box:hover {
+    box-shadow: 0 0 20px #ff004f;
+}
+
+.tab-contents#education #year, .tab-contents#education #professor {
+    flex-basis: calc(50% - 15px);
+}
+
+.tab-contents#education #year p, .tab-contents#education #professor p {
+    margin: 0;
+}
+
+.tab-contents#education #year h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.tab-contents#education #professor span {
+    font-weight: bold;
+}
+
+.tab-contents#education #container-2:hover::after {
+    opacity: 0;
+}
+
 /* Services section */ 
 #services{
     padding: 30px 0;
@@ -392,6 +433,22 @@ form .btn2{
 }
 .copyright i{
     color: #ff004f;
+}
+
+/* Arrow to the top*/ 
+.back-to-top {
+    position: fixed;
+    transition: transform 0.3s;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.back-to-top:hover {
+    transform: translateY(-5px); 
+    font-weight: bold; 
+}
+#backToTop {
+    display: none; /* Hide the arrow initially */
 }
 
 /* CSS for small screens */
