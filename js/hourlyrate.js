@@ -1,3 +1,4 @@
+// Hourly rate function
 function hourlyRate(radio) {
     var hourlyRate = document.getElementById('hourlyRate');
     if (radio.value === 'Hiring') {
@@ -7,13 +8,13 @@ function hourlyRate(radio) {
     }
 }
 
-// Arrow to the top
+// Arrow to the top function
 window.addEventListener('scroll', function() {
     var backToTop = document.getElementById('backToTop');
-    var aboutSection = document.getElementById('about');
+    var header = document.getElementById('header');
 
-    // Check if the scroll position is within the about section
-    if (window.scrollY >= aboutSection.offsetTop) {
+    // Check if the scroll position is beyond the header section
+    if (window.scrollY > header.offsetHeight) {
         backToTop.style.display = 'block'; // Show the arrow
     } else {
         backToTop.style.display = 'none'; // Hide the arrow

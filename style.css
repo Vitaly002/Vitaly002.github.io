@@ -73,43 +73,7 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
-/* About honesty */
-#honesty {
-    padding: 80px 0;
-    color: #ababab;
-}
-
-/* Adjustments specific to the honesty section */
-#honesty .about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-#honesty .about-col-2 {
-    flex-basis: 60%;
-}
-
-#honesty .section-title {
-    font-size: 30px;
-    font-weight: 500;
-    color: #fff;
-    margin-top: 30px;
-}
-
-#honesty .about-col-2 ul {
-    list-style: none;
-    padding: 0;
-}
-
-#honesty .about-col-2 ul li {
-    margin-bottom: 15px;
-}
-
-#honesty .about-col-2 ul li span {
-    font-weight: bold;
-}
-
-/* About section */ 
+/********************** About Section **********************/ 
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -176,7 +140,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* Education section*/
+/************************ Education in the About Section **********************/
 .tab-contents#education h3 {
     font-size: 24px;
     color: #ff004f;
@@ -217,7 +181,7 @@ nav ul li a:hover::after{
     opacity: 0;
 }
 
-/* Services section */ 
+/****************************** Services Section ****************************/ 
 #services{
     padding: 30px 0;
 }
@@ -256,7 +220,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* Portfolio section */ 
+/******************************* Portfolio Section **************************/ 
 #portfolio{
     padding: 50px 0;
 }
@@ -334,7 +298,7 @@ nav ul li a:hover::after{
     transform: translateY(-5px); /* Move the button up by 5 pixels on hover */
 }
 
-/* Contact section */
+/*********************** Contact Section **************************/
 .contact-left{
     flex-basis: 35%;
 }
@@ -407,7 +371,7 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-/* Radio buttons */
+/************************** Radio Buttons ************************/
 .radio-group {
     margin-top: 10px; /* Adjust the top margin as needed */
 }
@@ -435,23 +399,37 @@ form .btn2{
     color: #ff004f;
 }
 
-/* Arrow to the top*/ 
+/********************* Arrow to the Top **********************/ 
 .back-to-top {
     position: fixed;
-    transition: transform 0.3s;
     bottom: 20px;
     right: 20px;
-    z-index: 999;
-}
-.back-to-top:hover {
-    transform: translateY(-5px); 
-    font-weight: bold; 
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ff004f; /* Adjust border style and color as needed */
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth hover effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .back-to-top:hover {
+    background: #ff004f; /* Adjust hover background color and opacity as needed */
+    transform: translateY(-5px); /* Move the button up by 5 pixels on hover */
+  }
+  .fa-solid.fa-angle-up {
+    color: white; /* Set the color to white */
+    line-height: 22px; /* Adjust line height to match circle height */
 }
 #backToTop {
     display: none; /* Hide the arrow initially */
 }
 
-/* CSS for small screens */
+/*********************** CSS for small screens *********************/
 nav .fas{
     display: none;
 }
